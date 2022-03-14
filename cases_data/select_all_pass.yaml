@@ -1,0 +1,237 @@
+# 说明:
+#  - 本文档是 为了 > 测试mysql单表查询访问方式 < 而编写的测试用例集
+#  - 涉及的访问方式有：const, ref, ref_or_null, range, index, all, index merge(Intersection, Union, Sort-Union)
+#  - 其中 Sort-Union 还没有专门写
+#  - 共 32 个测试用例
+
+
+# For const
+# ---------------------------------------------------------
+# 正向测试用例 -> 能使用const
+# 通过主键 与 常数的等值比较 来定位一条记录
+select_test_case001:
+  sql: "SELECT * FROM test_table WHERE id=1438;"
+  type: const
+  result_len: 1
+
+# 通过 唯一二级索引 与 常数的等值比较 来定位一条记录
+select_test_case002:
+  sql: "SELECT * FROM test_table WHERE key2=3841;"
+  type: const
+  result_len: 1
+
+# 反向测试用例 -> 不能使用const
+# 普通二级索引 + 查询该列为NULL值
+select_test_case003:
+  sql: "SELECT * FROM test_table WHERE key3 IS NULL;"
+  type: ref
+  result_len: 1154
+
+# 唯一二级索引 + 查询该列为NULL值 -> 不能使用const
+select_test_case004:
+  sql: "SELECT * FROM test_table WHERE key2 IS NULL;"
+  type: ref
+  result_len: 3
+
+# For ref
+# ---------------------------------------------------------
+# 正向测试用例 -> 能使用ref
+# 普通二级索引列与常数 进行等值比较
+select_test_case005:
+  sql: "SELECT * FROM test_table WHERE key1='abc';"
+  type: ref
+  result_len: 2061
+
+# 多个索引列的二级索引 | 只要最左边的连续索引列是常数的等值比较
+select_test_case006:
+  sql: "SELECT * FROM test_table WHERE key_part1 = 'mike';"
+  type: ref
+  result_len: 229
+
+select_test_case007:
+  sql: "SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 = 'lucy';"
+  type: ref
+  result_len: '0'
+
+select_test_case008:
+  sql: "SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 = 'lucy' AND key_part3 = 'lily';"
+  type: ref
+  result_len: '0'
+
+# 反向测试用例 -> 不能使用ref
+# 最左边的连续索引列并不全部是等值比较
+select_test_case009:
+  sql: "SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 > 'lucy';"
+  type: range
+  result_len: '0'
+
+# For ref_or_null
+# ---------------------------------------------------------
+# 正向测试用例 -> 能使用ref_or_null
+# 找出某个二级索引列的值等于某个常数的记录+ 该列的值为 NULL 的记录也找出来 | 使用二级索引而不是全表扫描的方式
+select_test_case0010:
+  sql: "SELECT * FROM test_table WHERE key1 = 'abc' OR key1 IS NULL"
+  type: ref_or_null
+  result_len: 2061
+
+# 反向测试用例 -> 不能使用ref_or_null
+select_test_case0011:
+  sql: "SELECT * FROM test_table WHERE key1='abc';"
+  type: ref
+  result_len: 2061
+
+# For range
+# ---------------------------------------------------------
+# 正向测试用例 -> 能使用range
+# 利用索引进行范围匹配
+select_test_case0012:
+  sql: "SELECT * FROM test_table WHERE key2 IN (1138, 6228) OR (key2 >=38 AND key2 <=79);"
+  type: range
+  result_len: 44
+
+# 反向测试用例 -> 不能使用range
+# 单点区间（仅包含一个单点扫描区间）
+select_test_case0013:
+  sql: "SELECT * FROM test_table WHERE key2 IN (1138);"
+  type: const
+  result_len: 1
+
+# 连续范围区间（扫描区间为正负无穷大）
+select_test_case0014:
+  sql: "SELECT * FROM test_table WHERE key2 >=38 or key2 <=79;"
+  type: ALL
+  result_len: 29987
+
+# For index
+# ---------------------------------------------------------
+# 正向测试用例 -> 能使用index
+# 扫描全部二级索引记录idx_key_part
+select_test_case0015:
+  sql: "SELECT key_part1, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc'"
+  type: index
+  result_len: 2518
+
+# 当通过全表扫描对使用innodb存储引擎的表执行查询时，如果添加了"order by 主键"
+select_test_case0016:
+  sql: "select * from test_table order by id;"
+  type: index
+  result_len: 29990
+
+# 反向测试用例 -> 不能使用index
+# 不能扫描全部的二级索引的4种组合
+select_test_case0017:
+  sql: "SELECT key1, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';"
+  type: ALL
+  result_len: 2518
+
+select_test_case0018:
+  sql: "SELECT key2, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';"
+  type: ALL
+  result_len: 2518
+
+select_test_case0019:
+  sql: "SELECT common_field, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';"
+  type: ALL
+  result_len: 2518
+
+select_test_case0020:
+  sql: "SELECT key_part1, key_part2, common_field FROM test_table WHERE key_part2 = 'abc';"
+  type: ALL
+  result_len: 2518
+
+# For all (全表扫描执行查询的方式, 对于InnoDB表来说，就是直接扫描聚簇索引)
+# --------------------------------------------------------------
+# 正向测试用例 -> 能使用all
+# 查询整个表
+select_test_case0021:
+  sql: "SELECT * FROM test_table;"
+  type: ALL
+  result_len: 29990
+
+# 查询整个表 + 按照key1排序
+select_test_case0022:
+  sql: "SELECT * FROM test_table order by key1;"
+  type: ALL
+  result_len: 29990
+
+# 查询 common_field='abc' 的记录
+select_test_case0023:
+  sql: "SELECT * FROM test_table where common_field='abc';"
+  type: ALL
+  result_len: 1999
+
+# 反向测试用例 -> 不能使用all
+# 除了all外的以上所有单表访问方式中的正向测试用例都是
+
+# For index merge(索引合并)
+# --------------------------------------------------------------
+# For Intersection (使用场景：单独根据搜索条件从某个二级索引中获取的记录数太多，
+# 导致回表开销太大，合并后可以明显降低回表开销)
+# --------------------------------------------------------------
+# 正向测试用例 -> 能使用Intersection
+# 能按主键排序
+select_test_case0024:
+  sql: "SELECT * FROM test_table WHERE key1 = 'a' AND key3 = 'b';"
+  type: index_merge
+  extra: Using intersect(idx_key1,idx_key3); Using where
+  result_len: 27
+
+# 直接包含主键id的排序（聚簇索引本身就是按主键值进行排序的）
+select_test_case0025:
+  sql: "SELECT * FROM test_table WHERE key1 = 'a' AND id > 9000;"
+  type: index_merge
+  extra: Using intersect(idx_key1,PRIMARY); Using where
+  result_len: 480
+
+# 反向测试用例 -> 能使用Intersection
+# 不能按主键排序
+select_test_case0026:
+  sql: "SELECT * FROM test_table WHERE key1 > 'a' AND key3 = 'b';"
+  type: ref
+  extra: Using where
+  result_len: 1127
+
+select_test_case0027:
+  sql: "SELECT * FROM test_table WHERE key1 = 'a' AND key_part1 = 'a';"
+  type: ref
+  extra: Using where
+  result_len: '0'
+
+# For Union (适用场景：单独根据搜索条件从某个二级索引中获取的记录数比较少)
+# --------------------------------------------------------------
+# 正向测试用例 -> 能使用Union
+# 能按主键排序
+select_test_case0028:
+  sql: "SELECT * FROM test_table WHERE key1 = 'a' OR key3 = 'b';"
+  type: index_merge
+  extra: Using union(idx_key1,idx_key3); Using where
+  result_len: 1814
+
+select_test_case0029:
+  sql: "SELECT * FROM test_table WHERE key_part1 = 'a' AND key_part2 = 'b' AND key_part3 = 'c' OR (key1 = 'a' AND key3 = 'b');"
+  type: index_merge
+  extra: Using union(idx_key_part,intersect(idx_key1,idx_key3)); Using where
+  result_len: 27
+
+# 直接包含主键id的排序（聚簇索引本身就是按主键值进行排序的）
+select_test_case0030:
+  sql: "SELECT * FROM test_table WHERE key1 = 'a' OR id > 9000;"
+  type: index_merge
+  extra: Using union(idx_key1,PRIMARY); Using where
+  result_len: 21197
+
+# 反向测试用例 -> 不能使用Union
+# 不能按主键排序
+select_test_case0031:
+  sql: "SELECT * FROM test_table WHERE key1 > 'a' OR key3 = 'b';"
+  type: ALL
+  extra: Using where
+  result_len: 29330
+
+select_test_case0032:
+  sql: "SELECT * FROM test_table WHERE key1 = 'a' OR key_part1 = 'a';"
+  type: index_merge
+  extra: Using sort_union(idx_key1,idx_key_part); Using where
+  result_len: 1145
+
+

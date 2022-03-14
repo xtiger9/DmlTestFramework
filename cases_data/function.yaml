@@ -1,0 +1,38 @@
+# 常用聚合函数测试用例，涉及：sum, avg, count, max, min
+
+#求指定列的和
+funcntion_test_case001:
+  table_name: test_table
+  func_type: sum
+  column: key2
+  value: 450014882
+
+# 求指定列的平均值
+funcntion_test_case002:
+  table_name: test_table
+  func_type: avg
+  column: key2
+  value: '15006.9991'
+
+# 按照指定列统计行数
+funcntion_test_case003:
+  table_name: test_table
+  func_type: count
+  column: key2
+  value: 29987
+
+# 求指定列最大值
+funcntion_test_case004:
+  table_name: test_table
+  func_type: max
+  column: key2
+  value: 30000
+
+# 求指定列最小值
+funcntion_test_case005:
+  table_name: test_table
+  func_type: min
+  column: key2
+  value: 11
+
+

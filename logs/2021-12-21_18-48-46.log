@@ -1,0 +1,414 @@
+2021-12-21 18:48:46,498 - log.py[line:51] - DEBUG: DEBUG - sql: SELECT sum(key2) FROM test_table;
+2021-12-21 18:48:46,522 - log.py[line:56] - INFO: INFO - dispose db connection in function() method
+2021-12-21 18:48:46,522 - log.py[line:56] - INFO: INFO - return_data: 450014882
+2021-12-21 18:48:46,523 - log.py[line:51] - DEBUG: DEBUG - sql: SELECT avg(key2) FROM test_table;
+2021-12-21 18:48:46,547 - log.py[line:56] - INFO: INFO - dispose db connection in function() method
+2021-12-21 18:48:46,547 - log.py[line:56] - INFO: INFO - return_data: 15006.9991
+2021-12-21 18:48:46,547 - log.py[line:51] - DEBUG: DEBUG - sql: SELECT count(key2) FROM test_table;
+2021-12-21 18:48:46,572 - log.py[line:56] - INFO: INFO - dispose db connection in function() method
+2021-12-21 18:48:46,573 - log.py[line:56] - INFO: INFO - return_data: 29987
+2021-12-21 18:48:46,573 - log.py[line:51] - DEBUG: DEBUG - sql: SELECT max(key2) FROM test_table;
+2021-12-21 18:48:46,576 - log.py[line:56] - INFO: INFO - dispose db connection in function() method
+2021-12-21 18:48:46,576 - log.py[line:56] - INFO: INFO - return_data: 30000
+2021-12-21 18:48:46,576 - log.py[line:51] - DEBUG: DEBUG - sql: SELECT min(key2) FROM test_table;
+2021-12-21 18:48:46,578 - log.py[line:56] - INFO: INFO - dispose db connection in function() method
+2021-12-21 18:48:46,579 - log.py[line:56] - INFO: INFO - return_data: 11
+2021-12-21 18:48:46,583 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:46,583 - log.py[line:56] - INFO: INFO - return_data: 1
+2021-12-21 18:48:46,583 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table WHERE id=1438;', 'type': 'const', 'result_len': 1}
+2021-12-21 18:48:46,619 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:46,619 - log.py[line:56] - INFO: INFO - return_data: 1
+2021-12-21 18:48:46,619 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table WHERE key2=3841;', 'type': 'const', 'result_len': 1}
+2021-12-21 18:48:46,650 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:46,650 - log.py[line:56] - INFO: INFO - return_data: 1154
+2021-12-21 18:48:46,650 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table WHERE key3 IS NULL;', 'type': 'const', 'result_len': 1154}
+2021-12-21 18:48:46,655 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:46,655 - log.py[line:56] - INFO: INFO - return_data: 3
+2021-12-21 18:48:46,655 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table WHERE key2 IS NULL;', 'type': 'const', 'result_len': 3}
+2021-12-21 18:48:46,687 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:46,687 - log.py[line:56] - INFO: INFO - return_data: 2061
+2021-12-21 18:48:46,687 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1='abc';", 'type': 'ref', 'result_len': 2061}
+2021-12-21 18:48:46,715 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:46,715 - log.py[line:56] - INFO: INFO - return_data: 229
+2021-12-21 18:48:46,715 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key_part1 = 'mike';", 'type': 'ref', 'result_len': 229}
+2021-12-21 18:48:46,733 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:46,733 - log.py[line:56] - INFO: INFO - return_data: 0
+2021-12-21 18:48:46,733 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 = 'lucy';", 'type': 'ref', 'result_len': '0'}
+2021-12-21 18:48:46,748 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:46,749 - log.py[line:56] - INFO: INFO - return_data: 0
+2021-12-21 18:48:46,749 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 = 'lucy' AND key_part3 = 'lily';", 'type': 'ref', 'result_len': '0'}
+2021-12-21 18:48:46,766 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:46,766 - log.py[line:56] - INFO: INFO - return_data: 0
+2021-12-21 18:48:46,766 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 > 'lucy';", 'type': 'ref', 'result_len': '0'}
+2021-12-21 18:48:46,799 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:46,799 - log.py[line:56] - INFO: INFO - return_data: 2061
+2021-12-21 18:48:46,800 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 = 'abc' OR key1 IS NULL", 'type': 'ref_or_null', 'result_len': 2061}
+2021-12-21 18:48:46,843 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:46,843 - log.py[line:56] - INFO: INFO - return_data: 2061
+2021-12-21 18:48:46,843 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1='abc';", 'type': 'ref_or_null', 'result_len': 2061}
+2021-12-21 18:48:46,860 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:46,860 - log.py[line:56] - INFO: INFO - return_data: 44
+2021-12-21 18:48:46,860 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table WHERE key2 IN (1138, 6228) OR (key2 >=38 AND key2 <=79);', 'type': 'range', 'result_len': 44}
+2021-12-21 18:48:46,875 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:46,875 - log.py[line:56] - INFO: INFO - return_data: 1
+2021-12-21 18:48:46,875 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table WHERE key2 IN (1138);', 'type': 'range', 'result_len': 1}
+2021-12-21 18:48:47,271 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:47,275 - log.py[line:56] - INFO: INFO - return_data: 29987
+2021-12-21 18:48:47,275 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table WHERE key2 >=38 or key2 <=79;', 'type': 'range', 'result_len': 29987}
+2021-12-21 18:48:47,303 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:47,303 - log.py[line:56] - INFO: INFO - return_data: 2518
+2021-12-21 18:48:47,303 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT key_part1, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc'", 'type': 'index', 'result_len': 2518}
+2021-12-21 18:48:47,699 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:47,703 - log.py[line:56] - INFO: INFO - return_data: 29990
+2021-12-21 18:48:47,704 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'select * from test_table order by id;', 'type': 'index', 'result_len': 29990}
+2021-12-21 18:48:47,733 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:47,733 - log.py[line:56] - INFO: INFO - return_data: 2518
+2021-12-21 18:48:47,733 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT key1, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';", 'type': 'index', 'result_len': 2518}
+2021-12-21 18:48:47,763 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:47,763 - log.py[line:56] - INFO: INFO - return_data: 2518
+2021-12-21 18:48:47,763 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT key2, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';", 'type': 'index', 'result_len': 2518}
+2021-12-21 18:48:47,804 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:47,804 - log.py[line:56] - INFO: INFO - return_data: 2518
+2021-12-21 18:48:47,804 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT common_field, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';", 'type': 'index', 'result_len': 2518}
+2021-12-21 18:48:47,845 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:47,846 - log.py[line:56] - INFO: INFO - return_data: 2518
+2021-12-21 18:48:47,846 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT key_part1, key_part2, common_field FROM test_table WHERE key_part2 = 'abc';", 'type': 'index', 'result_len': 2518}
+2021-12-21 18:48:48,264 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:48,268 - log.py[line:56] - INFO: INFO - return_data: 29990
+2021-12-21 18:48:48,268 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table;', 'type': 'ALL', 'result_len': 29990}
+2021-12-21 18:48:48,706 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:48,710 - log.py[line:56] - INFO: INFO - return_data: 29990
+2021-12-21 18:48:48,710 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table order by key1;', 'type': 'ALL', 'result_len': 29990}
+2021-12-21 18:48:48,768 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:48,768 - log.py[line:56] - INFO: INFO - return_data: 1999
+2021-12-21 18:48:48,768 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table where common_field='abc';", 'type': 'ALL', 'result_len': 1999}
+2021-12-21 18:48:48,785 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:48,785 - log.py[line:56] - INFO: INFO - return_data: 27
+2021-12-21 18:48:48,785 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 = 'a' AND key3 = 'b';", 'type': 'index_merge', 'extra': 'Using intersect(idx_key1,idx_key3); Using where', 'result_len': 27}
+2021-12-21 18:48:48,812 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:48,812 - log.py[line:56] - INFO: INFO - return_data: 480
+2021-12-21 18:48:48,812 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 = 'a' AND id > 9000;", 'type': 'index_merge', 'extra': 'Using intersect(idx_key1,PRIMARY); Using where', 'result_len': 480}
+2021-12-21 18:48:48,841 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:48,841 - log.py[line:56] - INFO: INFO - return_data: 1127
+2021-12-21 18:48:48,841 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 > 'a' AND key3 = 'b';", 'type': 'index_merge', 'extra': 'Using where', 'result_len': 1127}
+2021-12-21 18:48:48,857 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:48,857 - log.py[line:56] - INFO: INFO - return_data: 0
+2021-12-21 18:48:48,857 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 = 'a' AND key_part1 = 'a';", 'type': 'index_merge', 'extra': 'Using where', 'result_len': '0'}
+2021-12-21 18:48:48,897 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:48,897 - log.py[line:56] - INFO: INFO - return_data: 1814
+2021-12-21 18:48:48,897 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 = 'a' OR key3 = 'b';", 'type': 'index_merge', 'extra': 'Using union(idx_key1,idx_key3); Using where', 'result_len': 1814}
+2021-12-21 18:48:48,913 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:48,913 - log.py[line:56] - INFO: INFO - return_data: 27
+2021-12-21 18:48:48,913 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key_part1 = 'a' AND key_part2 = 'b' AND key_part3 = 'c' OR (key1 = 'a' AND key3 = 'b');", 'type': 'index_merge', 'extra': 'Using union(idx_key_part,intersect(idx_key1,idx_key3)); Using where', 'result_len': 27}
+2021-12-21 18:48:49,221 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:49,223 - log.py[line:56] - INFO: INFO - return_data: 21197
+2021-12-21 18:48:49,223 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 = 'a' OR id > 9000;", 'type': 'index_merge', 'extra': 'Using union(idx_key1,PRIMARY); Using where', 'result_len': 21197}
+2021-12-21 18:48:49,633 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:49,637 - log.py[line:56] - INFO: INFO - return_data: 29330
+2021-12-21 18:48:49,637 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 > 'a' OR key3 = 'b';", 'type': 'index_merge', 'extra': 'Using where', 'result_len': 29330}
+2021-12-21 18:48:49,676 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:49,676 - log.py[line:56] - INFO: INFO - return_data: 1145
+2021-12-21 18:48:49,676 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 = 'a' OR key_part1 = 'a';", 'type': 'index_merge', 'extra': 'Using sort_union(idx_key1,idx_key_part); Using where', 'result_len': 1145}
+2021-12-21 18:48:49,681 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,681 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE id=1438;
+2021-12-21 18:48:49,681 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'const', 'possible_keys': 'PRIMARY', 'key': 'PRIMARY', 'key_len': '4', 'ref': 'const', 'rows': 1, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:49,686 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,686 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key2=3841;
+2021-12-21 18:48:49,686 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'const', 'possible_keys': 'uk_key2', 'key': 'uk_key2', 'key_len': '5', 'ref': 'const', 'rows': 1, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:49,701 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,702 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key3 IS NULL;
+2021-12-21 18:48:49,702 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key3', 'key': 'idx_key3', 'key_len': '303', 'ref': 'const', 'rows': 1154, 'filtered': 100.0, 'extra': 'Using index condition'}
+2021-12-21 18:48:49,718 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,718 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key2 IS NULL;
+2021-12-21 18:48:49,718 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'uk_key2', 'key': 'uk_key2', 'key_len': '5', 'ref': 'const', 'rows': 3, 'filtered': 100.0, 'extra': 'Using index condition'}
+2021-12-21 18:48:49,734 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,734 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1='abc';
+2021-12-21 18:48:49,734 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key1', 'key': 'idx_key1', 'key_len': '303', 'ref': 'const', 'rows': 2061, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:49,750 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,750 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key_part1 = 'mike';
+2021-12-21 18:48:49,750 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key_part', 'key': 'idx_key_part', 'key_len': '303', 'ref': 'const', 'rows': 229, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:49,764 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,765 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 = 'lucy';
+2021-12-21 18:48:49,765 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key_part', 'key': 'idx_key_part', 'key_len': '606', 'ref': 'const,const', 'rows': 1, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:49,780 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,780 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 = 'lucy' AND key_part3 = 'lily';
+2021-12-21 18:48:49,780 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key_part', 'key': 'idx_key_part', 'key_len': '909', 'ref': 'const,const,const', 'rows': 1, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:49,794 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,794 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 > 'lucy';
+2021-12-21 18:48:49,794 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'range', 'possible_keys': 'idx_key_part', 'key': 'idx_key_part', 'key_len': '606', 'ref': None, 'rows': 1, 'filtered': 100.0, 'extra': 'Using index condition'}
+2021-12-21 18:48:49,810 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,810 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 = 'abc' OR key1 IS NULL
+2021-12-21 18:48:49,810 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref_or_null', 'possible_keys': 'idx_key1', 'key': 'idx_key1', 'key_len': '303', 'ref': 'const', 'rows': 2062, 'filtered': 100.0, 'extra': 'Using index condition'}
+2021-12-21 18:48:49,826 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,826 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1='abc';
+2021-12-21 18:48:49,826 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key1', 'key': 'idx_key1', 'key_len': '303', 'ref': 'const', 'rows': 2061, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:49,841 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,841 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key2 IN (1138, 6228) OR (key2 >=38 AND key2 <=79);
+2021-12-21 18:48:49,842 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'range', 'possible_keys': 'uk_key2', 'key': 'uk_key2', 'key_len': '5', 'ref': None, 'rows': 44, 'filtered': 100.0, 'extra': 'Using index condition'}
+2021-12-21 18:48:49,861 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,861 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key2 IN (1138);
+2021-12-21 18:48:49,861 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'const', 'possible_keys': 'uk_key2', 'key': 'uk_key2', 'key_len': '5', 'ref': 'const', 'rows': 1, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:49,877 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,877 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key2 >=38 or key2 <=79;
+2021-12-21 18:48:49,877 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': 'uk_key2', 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 50.0, 'extra': 'Using where'}
+2021-12-21 18:48:49,894 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,894 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT key_part1, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc'
+2021-12-21 18:48:49,894 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index', 'possible_keys': None, 'key': 'idx_key_part', 'key_len': '909', 'ref': None, 'rows': 30148, 'filtered': 10.0, 'extra': 'Using where; Using index'}
+2021-12-21 18:48:49,911 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,911 - log.py[line:51] - DEBUG: DEBUG - sql: explain select * from test_table order by id;
+2021-12-21 18:48:49,912 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index', 'possible_keys': None, 'key': 'PRIMARY', 'key_len': '4', 'ref': None, 'rows': 30148, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:49,927 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,928 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT key1, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';
+2021-12-21 18:48:49,928 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': None, 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 10.0, 'extra': 'Using where'}
+2021-12-21 18:48:49,945 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,945 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT key2, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';
+2021-12-21 18:48:49,945 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': None, 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 10.0, 'extra': 'Using where'}
+2021-12-21 18:48:49,961 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,961 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT common_field, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';
+2021-12-21 18:48:49,961 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': None, 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 10.0, 'extra': 'Using where'}
+2021-12-21 18:48:49,978 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,978 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT key_part1, key_part2, common_field FROM test_table WHERE key_part2 = 'abc';
+2021-12-21 18:48:49,978 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': None, 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 10.0, 'extra': 'Using where'}
+2021-12-21 18:48:49,984 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,984 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table;
+2021-12-21 18:48:49,984 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': None, 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:49,998 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:49,998 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table order by key1;
+2021-12-21 18:48:49,998 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': None, 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 100.0, 'extra': 'Using filesort'}
+2021-12-21 18:48:50,027 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:50,027 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table where common_field='abc';
+2021-12-21 18:48:50,027 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': None, 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 10.0, 'extra': 'Using where'}
+2021-12-21 18:48:50,043 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:50,043 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 = 'a' AND key3 = 'b';
+2021-12-21 18:48:50,043 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index_merge', 'possible_keys': 'idx_key1,idx_key3', 'key': 'idx_key1,idx_key3', 'key_len': '303,303', 'ref': None, 'rows': 26, 'filtered': 100.0, 'extra': 'Using intersect(idx_key1,idx_key3); Using where'}
+2021-12-21 18:48:50,058 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:50,059 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 = 'a' AND id > 9000;
+2021-12-21 18:48:50,059 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index_merge', 'possible_keys': 'PRIMARY,idx_key1', 'key': 'idx_key1,PRIMARY', 'key_len': '307,4', 'ref': None, 'rows': 240, 'filtered': 100.0, 'extra': 'Using intersect(idx_key1,PRIMARY); Using where'}
+2021-12-21 18:48:50,075 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:50,075 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 > 'a' AND key3 = 'b';
+2021-12-21 18:48:50,075 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key1,idx_key3', 'key': 'idx_key3', 'key_len': '303', 'ref': 'const', 'rows': 1154, 'filtered': 50.0, 'extra': 'Using where'}
+2021-12-21 18:48:50,091 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:50,091 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 = 'a' AND key_part1 = 'a';
+2021-12-21 18:48:50,091 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key1,idx_key_part', 'key': 'idx_key_part', 'key_len': '303', 'ref': 'const', 'rows': 458, 'filtered': 2.28, 'extra': 'Using where'}
+2021-12-21 18:48:50,109 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:50,109 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 = 'a' OR key3 = 'b';
+2021-12-21 18:48:50,109 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index_merge', 'possible_keys': 'idx_key1,idx_key3', 'key': 'idx_key1,idx_key3', 'key_len': '303,303', 'ref': None, 'rows': 1841, 'filtered': 100.0, 'extra': 'Using union(idx_key1,idx_key3); Using where'}
+2021-12-21 18:48:50,125 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:50,125 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key_part1 = 'a' AND key_part2 = 'b' AND key_part3 = 'c' OR (key1 = 'a' AND key3 = 'b');
+2021-12-21 18:48:50,125 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index_merge', 'possible_keys': 'idx_key1,idx_key3,idx_key_part', 'key': 'idx_key_part,idx_key1,idx_key3', 'key_len': '909,303,303', 'ref': None, 'rows': 27, 'filtered': 100.0, 'extra': 'Using union(idx_key_part,intersect(idx_key1,idx_key3)); Using where'}
+2021-12-21 18:48:50,142 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:50,142 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 = 'a' OR id > 9000;
+2021-12-21 18:48:50,142 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index_merge', 'possible_keys': 'PRIMARY,idx_key1', 'key': 'idx_key1,PRIMARY', 'key_len': '303,4', 'ref': None, 'rows': 15761, 'filtered': 100.0, 'extra': 'Using union(idx_key1,PRIMARY); Using where'}
+2021-12-21 18:48:50,167 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:50,167 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 > 'a' OR key3 = 'b';
+2021-12-21 18:48:50,167 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': 'idx_key1,idx_key3', 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 40.0, 'extra': 'Using where'}
+2021-12-21 18:48:50,187 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:50,187 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 = 'a' OR key_part1 = 'a';
+2021-12-21 18:48:50,187 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index_merge', 'possible_keys': 'idx_key1,idx_key_part', 'key': 'idx_key1,idx_key_part', 'key_len': '303,303', 'ref': None, 'rows': 1145, 'filtered': 100.0, 'extra': 'Using sort_union(idx_key1,idx_key_part); Using where'}
+2021-12-21 18:48:50,190 - log.py[line:51] - DEBUG: DEBUG - sql: SELECT sum(key2) FROM test_table;
+2021-12-21 18:48:50,221 - log.py[line:56] - INFO: INFO - dispose db connection in function() method
+2021-12-21 18:48:50,221 - log.py[line:56] - INFO: INFO - return_data: 450014882
+2021-12-21 18:48:50,221 - log.py[line:51] - DEBUG: DEBUG - sql: SELECT avg(key2) FROM test_table;
+2021-12-21 18:48:50,280 - log.py[line:56] - INFO: INFO - dispose db connection in function() method
+2021-12-21 18:48:50,280 - log.py[line:56] - INFO: INFO - return_data: 15006.9991
+2021-12-21 18:48:50,281 - log.py[line:51] - DEBUG: DEBUG - sql: SELECT count(key2) FROM test_table;
+2021-12-21 18:48:50,304 - log.py[line:56] - INFO: INFO - dispose db connection in function() method
+2021-12-21 18:48:50,304 - log.py[line:56] - INFO: INFO - return_data: 29987
+2021-12-21 18:48:50,304 - log.py[line:51] - DEBUG: DEBUG - sql: SELECT max(key2) FROM test_table;
+2021-12-21 18:48:50,308 - log.py[line:56] - INFO: INFO - dispose db connection in function() method
+2021-12-21 18:48:50,308 - log.py[line:56] - INFO: INFO - return_data: 30000
+2021-12-21 18:48:50,308 - log.py[line:51] - DEBUG: DEBUG - sql: SELECT min(key2) FROM test_table;
+2021-12-21 18:48:50,312 - log.py[line:56] - INFO: INFO - dispose db connection in function() method
+2021-12-21 18:48:50,312 - log.py[line:56] - INFO: INFO - return_data: 11
+2021-12-21 18:48:50,317 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:50,318 - log.py[line:56] - INFO: INFO - return_data: 1
+2021-12-21 18:48:50,318 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table WHERE id=1438;', 'type': 'const', 'result_len': 1}
+2021-12-21 18:48:50,332 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:50,332 - log.py[line:56] - INFO: INFO - return_data: 1
+2021-12-21 18:48:50,332 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table WHERE key2=3841;', 'type': 'const', 'result_len': 1}
+2021-12-21 18:48:50,368 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:50,368 - log.py[line:56] - INFO: INFO - return_data: 1154
+2021-12-21 18:48:50,369 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table WHERE key3 IS NULL;', 'type': 'const', 'result_len': 1154}
+2021-12-21 18:48:50,384 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:50,384 - log.py[line:56] - INFO: INFO - return_data: 3
+2021-12-21 18:48:50,384 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table WHERE key2 IS NULL;', 'type': 'const', 'result_len': 3}
+2021-12-21 18:48:50,426 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:50,426 - log.py[line:56] - INFO: INFO - return_data: 2061
+2021-12-21 18:48:50,427 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1='abc';", 'type': 'ref', 'result_len': 2061}
+2021-12-21 18:48:50,444 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:50,444 - log.py[line:56] - INFO: INFO - return_data: 229
+2021-12-21 18:48:50,444 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key_part1 = 'mike';", 'type': 'ref', 'result_len': 229}
+2021-12-21 18:48:50,465 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:50,466 - log.py[line:56] - INFO: INFO - return_data: 0
+2021-12-21 18:48:50,466 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 = 'lucy';", 'type': 'ref', 'result_len': '0'}
+2021-12-21 18:48:50,489 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:50,489 - log.py[line:56] - INFO: INFO - return_data: 0
+2021-12-21 18:48:50,489 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 = 'lucy' AND key_part3 = 'lily';", 'type': 'ref', 'result_len': '0'}
+2021-12-21 18:48:50,511 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:50,511 - log.py[line:56] - INFO: INFO - return_data: 0
+2021-12-21 18:48:50,511 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 > 'lucy';", 'type': 'ref', 'result_len': '0'}
+2021-12-21 18:48:50,556 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:50,556 - log.py[line:56] - INFO: INFO - return_data: 2061
+2021-12-21 18:48:50,556 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 = 'abc' OR key1 IS NULL", 'type': 'ref_or_null', 'result_len': 2061}
+2021-12-21 18:48:50,600 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:50,600 - log.py[line:56] - INFO: INFO - return_data: 2061
+2021-12-21 18:48:50,600 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1='abc';", 'type': 'ref_or_null', 'result_len': 2061}
+2021-12-21 18:48:50,616 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:50,616 - log.py[line:56] - INFO: INFO - return_data: 44
+2021-12-21 18:48:50,616 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table WHERE key2 IN (1138, 6228) OR (key2 >=38 AND key2 <=79);', 'type': 'range', 'result_len': 44}
+2021-12-21 18:48:50,633 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:50,633 - log.py[line:56] - INFO: INFO - return_data: 1
+2021-12-21 18:48:50,633 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table WHERE key2 IN (1138);', 'type': 'range', 'result_len': 1}
+2021-12-21 18:48:51,061 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:51,066 - log.py[line:56] - INFO: INFO - return_data: 29987
+2021-12-21 18:48:51,066 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table WHERE key2 >=38 or key2 <=79;', 'type': 'range', 'result_len': 29987}
+2021-12-21 18:48:51,095 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:51,095 - log.py[line:56] - INFO: INFO - return_data: 2518
+2021-12-21 18:48:51,095 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT key_part1, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc'", 'type': 'index', 'result_len': 2518}
+2021-12-21 18:48:51,505 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:51,509 - log.py[line:56] - INFO: INFO - return_data: 29990
+2021-12-21 18:48:51,509 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'select * from test_table order by id;', 'type': 'index', 'result_len': 29990}
+2021-12-21 18:48:51,565 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:51,565 - log.py[line:56] - INFO: INFO - return_data: 2518
+2021-12-21 18:48:51,565 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT key1, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';", 'type': 'index', 'result_len': 2518}
+2021-12-21 18:48:51,595 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:51,595 - log.py[line:56] - INFO: INFO - return_data: 2518
+2021-12-21 18:48:51,595 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT key2, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';", 'type': 'index', 'result_len': 2518}
+2021-12-21 18:48:51,625 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:51,626 - log.py[line:56] - INFO: INFO - return_data: 2518
+2021-12-21 18:48:51,626 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT common_field, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';", 'type': 'index', 'result_len': 2518}
+2021-12-21 18:48:51,657 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:51,657 - log.py[line:56] - INFO: INFO - return_data: 2518
+2021-12-21 18:48:51,657 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT key_part1, key_part2, common_field FROM test_table WHERE key_part2 = 'abc';", 'type': 'index', 'result_len': 2518}
+2021-12-21 18:48:52,061 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:52,065 - log.py[line:56] - INFO: INFO - return_data: 29990
+2021-12-21 18:48:52,065 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table;', 'type': 'ALL', 'result_len': 29990}
+2021-12-21 18:48:52,491 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:52,495 - log.py[line:56] - INFO: INFO - return_data: 29990
+2021-12-21 18:48:52,495 - log.py[line:56] - INFO: INFO - dict_: {'sql': 'SELECT * FROM test_table order by key1;', 'type': 'ALL', 'result_len': 29990}
+2021-12-21 18:48:52,559 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:52,560 - log.py[line:56] - INFO: INFO - return_data: 1999
+2021-12-21 18:48:52,560 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table where common_field='abc';", 'type': 'ALL', 'result_len': 1999}
+2021-12-21 18:48:52,585 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:52,585 - log.py[line:56] - INFO: INFO - return_data: 27
+2021-12-21 18:48:52,585 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 = 'a' AND key3 = 'b';", 'type': 'index_merge', 'extra': 'Using intersect(idx_key1,idx_key3); Using where', 'result_len': 27}
+2021-12-21 18:48:52,613 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:52,613 - log.py[line:56] - INFO: INFO - return_data: 480
+2021-12-21 18:48:52,613 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 = 'a' AND id > 9000;", 'type': 'index_merge', 'extra': 'Using intersect(idx_key1,PRIMARY); Using where', 'result_len': 480}
+2021-12-21 18:48:52,644 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:52,644 - log.py[line:56] - INFO: INFO - return_data: 1127
+2021-12-21 18:48:52,644 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 > 'a' AND key3 = 'b';", 'type': 'index_merge', 'extra': 'Using where', 'result_len': 1127}
+2021-12-21 18:48:52,649 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:52,650 - log.py[line:56] - INFO: INFO - return_data: 0
+2021-12-21 18:48:52,650 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 = 'a' AND key_part1 = 'a';", 'type': 'index_merge', 'extra': 'Using where', 'result_len': '0'}
+2021-12-21 18:48:52,700 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:52,701 - log.py[line:56] - INFO: INFO - return_data: 1814
+2021-12-21 18:48:52,701 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 = 'a' OR key3 = 'b';", 'type': 'index_merge', 'extra': 'Using union(idx_key1,idx_key3); Using where', 'result_len': 1814}
+2021-12-21 18:48:52,717 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:52,717 - log.py[line:56] - INFO: INFO - return_data: 27
+2021-12-21 18:48:52,717 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key_part1 = 'a' AND key_part2 = 'b' AND key_part3 = 'c' OR (key1 = 'a' AND key3 = 'b');", 'type': 'index_merge', 'extra': 'Using union(idx_key_part,intersect(idx_key1,idx_key3)); Using where', 'result_len': 27}
+2021-12-21 18:48:53,037 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:53,040 - log.py[line:56] - INFO: INFO - return_data: 21197
+2021-12-21 18:48:53,040 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 = 'a' OR id > 9000;", 'type': 'index_merge', 'extra': 'Using union(idx_key1,PRIMARY); Using where', 'result_len': 21197}
+2021-12-21 18:48:53,458 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:53,462 - log.py[line:56] - INFO: INFO - return_data: 29330
+2021-12-21 18:48:53,462 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 > 'a' OR key3 = 'b';", 'type': 'index_merge', 'extra': 'Using where', 'result_len': 29330}
+2021-12-21 18:48:53,485 - log.py[line:56] - INFO: INFO - dispose db connection in select() method
+2021-12-21 18:48:53,485 - log.py[line:56] - INFO: INFO - return_data: 1145
+2021-12-21 18:48:53,485 - log.py[line:56] - INFO: INFO - dict_: {'sql': "SELECT * FROM test_table WHERE key1 = 'a' OR key_part1 = 'a';", 'type': 'index_merge', 'extra': 'Using sort_union(idx_key1,idx_key_part); Using where', 'result_len': 1145}
+2021-12-21 18:48:53,500 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,500 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE id=1438;
+2021-12-21 18:48:53,500 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'const', 'possible_keys': 'PRIMARY', 'key': 'PRIMARY', 'key_len': '4', 'ref': 'const', 'rows': 1, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:53,516 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,516 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key2=3841;
+2021-12-21 18:48:53,516 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'const', 'possible_keys': 'uk_key2', 'key': 'uk_key2', 'key_len': '5', 'ref': 'const', 'rows': 1, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:53,532 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,532 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key3 IS NULL;
+2021-12-21 18:48:53,532 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key3', 'key': 'idx_key3', 'key_len': '303', 'ref': 'const', 'rows': 1154, 'filtered': 100.0, 'extra': 'Using index condition'}
+2021-12-21 18:48:53,548 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,548 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key2 IS NULL;
+2021-12-21 18:48:53,548 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'uk_key2', 'key': 'uk_key2', 'key_len': '5', 'ref': 'const', 'rows': 3, 'filtered': 100.0, 'extra': 'Using index condition'}
+2021-12-21 18:48:53,564 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,564 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1='abc';
+2021-12-21 18:48:53,564 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key1', 'key': 'idx_key1', 'key_len': '303', 'ref': 'const', 'rows': 2061, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:53,579 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,579 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key_part1 = 'mike';
+2021-12-21 18:48:53,579 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key_part', 'key': 'idx_key_part', 'key_len': '303', 'ref': 'const', 'rows': 229, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:53,598 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,598 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 = 'lucy';
+2021-12-21 18:48:53,598 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key_part', 'key': 'idx_key_part', 'key_len': '606', 'ref': 'const,const', 'rows': 1, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:53,613 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,613 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 = 'lucy' AND key_part3 = 'lily';
+2021-12-21 18:48:53,613 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key_part', 'key': 'idx_key_part', 'key_len': '909', 'ref': 'const,const,const', 'rows': 1, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:53,628 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,628 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key_part1 = 'mike' AND key_part2 > 'lucy';
+2021-12-21 18:48:53,628 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'range', 'possible_keys': 'idx_key_part', 'key': 'idx_key_part', 'key_len': '606', 'ref': None, 'rows': 1, 'filtered': 100.0, 'extra': 'Using index condition'}
+2021-12-21 18:48:53,644 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,644 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 = 'abc' OR key1 IS NULL
+2021-12-21 18:48:53,644 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref_or_null', 'possible_keys': 'idx_key1', 'key': 'idx_key1', 'key_len': '303', 'ref': 'const', 'rows': 2062, 'filtered': 100.0, 'extra': 'Using index condition'}
+2021-12-21 18:48:53,659 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,659 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1='abc';
+2021-12-21 18:48:53,659 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key1', 'key': 'idx_key1', 'key_len': '303', 'ref': 'const', 'rows': 2061, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:53,675 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,675 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key2 IN (1138, 6228) OR (key2 >=38 AND key2 <=79);
+2021-12-21 18:48:53,675 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'range', 'possible_keys': 'uk_key2', 'key': 'uk_key2', 'key_len': '5', 'ref': None, 'rows': 44, 'filtered': 100.0, 'extra': 'Using index condition'}
+2021-12-21 18:48:53,692 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,692 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key2 IN (1138);
+2021-12-21 18:48:53,692 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'const', 'possible_keys': 'uk_key2', 'key': 'uk_key2', 'key_len': '5', 'ref': 'const', 'rows': 1, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:53,708 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,708 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key2 >=38 or key2 <=79;
+2021-12-21 18:48:53,708 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': 'uk_key2', 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 50.0, 'extra': 'Using where'}
+2021-12-21 18:48:53,715 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,715 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT key_part1, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc'
+2021-12-21 18:48:53,715 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index', 'possible_keys': None, 'key': 'idx_key_part', 'key_len': '909', 'ref': None, 'rows': 30148, 'filtered': 10.0, 'extra': 'Using where; Using index'}
+2021-12-21 18:48:53,723 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,724 - log.py[line:51] - DEBUG: DEBUG - sql: explain select * from test_table order by id;
+2021-12-21 18:48:53,724 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index', 'possible_keys': None, 'key': 'PRIMARY', 'key_len': '4', 'ref': None, 'rows': 30148, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:53,731 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,731 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT key1, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';
+2021-12-21 18:48:53,731 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': None, 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 10.0, 'extra': 'Using where'}
+2021-12-21 18:48:53,746 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,747 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT key2, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';
+2021-12-21 18:48:53,747 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': None, 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 10.0, 'extra': 'Using where'}
+2021-12-21 18:48:53,763 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,764 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT common_field, key_part2, key_part3 FROM test_table WHERE key_part2 = 'abc';
+2021-12-21 18:48:53,764 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': None, 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 10.0, 'extra': 'Using where'}
+2021-12-21 18:48:53,780 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,780 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT key_part1, key_part2, common_field FROM test_table WHERE key_part2 = 'abc';
+2021-12-21 18:48:53,780 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': None, 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 10.0, 'extra': 'Using where'}
+2021-12-21 18:48:53,796 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,797 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table;
+2021-12-21 18:48:53,797 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': None, 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 100.0, 'extra': None}
+2021-12-21 18:48:53,813 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,813 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table order by key1;
+2021-12-21 18:48:53,813 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': None, 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 100.0, 'extra': 'Using filesort'}
+2021-12-21 18:48:53,827 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,827 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table where common_field='abc';
+2021-12-21 18:48:53,827 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': None, 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 10.0, 'extra': 'Using where'}
+2021-12-21 18:48:53,842 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,842 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 = 'a' AND key3 = 'b';
+2021-12-21 18:48:53,842 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index_merge', 'possible_keys': 'idx_key1,idx_key3', 'key': 'idx_key1,idx_key3', 'key_len': '303,303', 'ref': None, 'rows': 26, 'filtered': 100.0, 'extra': 'Using intersect(idx_key1,idx_key3); Using where'}
+2021-12-21 18:48:53,857 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,857 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 = 'a' AND id > 9000;
+2021-12-21 18:48:53,857 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index_merge', 'possible_keys': 'PRIMARY,idx_key1', 'key': 'idx_key1,PRIMARY', 'key_len': '307,4', 'ref': None, 'rows': 240, 'filtered': 100.0, 'extra': 'Using intersect(idx_key1,PRIMARY); Using where'}
+2021-12-21 18:48:53,874 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,874 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 > 'a' AND key3 = 'b';
+2021-12-21 18:48:53,874 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key1,idx_key3', 'key': 'idx_key3', 'key_len': '303', 'ref': 'const', 'rows': 1154, 'filtered': 50.0, 'extra': 'Using where'}
+2021-12-21 18:48:53,893 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,893 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 = 'a' AND key_part1 = 'a';
+2021-12-21 18:48:53,893 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ref', 'possible_keys': 'idx_key1,idx_key_part', 'key': 'idx_key_part', 'key_len': '303', 'ref': 'const', 'rows': 458, 'filtered': 2.28, 'extra': 'Using where'}
+2021-12-21 18:48:53,909 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,909 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 = 'a' OR key3 = 'b';
+2021-12-21 18:48:53,910 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index_merge', 'possible_keys': 'idx_key1,idx_key3', 'key': 'idx_key1,idx_key3', 'key_len': '303,303', 'ref': None, 'rows': 1841, 'filtered': 100.0, 'extra': 'Using union(idx_key1,idx_key3); Using where'}
+2021-12-21 18:48:53,926 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,926 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key_part1 = 'a' AND key_part2 = 'b' AND key_part3 = 'c' OR (key1 = 'a' AND key3 = 'b');
+2021-12-21 18:48:53,926 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index_merge', 'possible_keys': 'idx_key1,idx_key3,idx_key_part', 'key': 'idx_key_part,idx_key1,idx_key3', 'key_len': '909,303,303', 'ref': None, 'rows': 27, 'filtered': 100.0, 'extra': 'Using union(idx_key_part,intersect(idx_key1,idx_key3)); Using where'}
+2021-12-21 18:48:53,932 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,932 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 = 'a' OR id > 9000;
+2021-12-21 18:48:53,932 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index_merge', 'possible_keys': 'PRIMARY,idx_key1', 'key': 'idx_key1,PRIMARY', 'key_len': '303,4', 'ref': None, 'rows': 15761, 'filtered': 100.0, 'extra': 'Using union(idx_key1,PRIMARY); Using where'}
+2021-12-21 18:48:53,948 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,948 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 > 'a' OR key3 = 'b';
+2021-12-21 18:48:53,948 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'ALL', 'possible_keys': 'idx_key1,idx_key3', 'key': None, 'key_len': None, 'ref': None, 'rows': 30148, 'filtered': 40.0, 'extra': 'Using where'}
+2021-12-21 18:48:53,965 - log.py[line:56] - INFO: INFO - dispose db connection in explain() method
+2021-12-21 18:48:53,965 - log.py[line:51] - DEBUG: DEBUG - sql: explain SELECT * FROM test_table WHERE key1 = 'a' OR key_part1 = 'a';
+2021-12-21 18:48:53,965 - log.py[line:56] - INFO: INFO - return_data: {'id': 1, 'select_type': 'SIMPLE', 'table': 'test_table', 'partitions': None, 'type': 'index_merge', 'possible_keys': 'idx_key1,idx_key_part', 'key': 'idx_key1,idx_key_part', 'key_len': '303,303', 'ref': None, 'rows': 1145, 'filtered': 100.0, 'extra': 'Using sort_union(idx_key1,idx_key_part); Using where'}

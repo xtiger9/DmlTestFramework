@@ -1,0 +1,325 @@
+test_1_function_1_funcntion_test_case001 (test_dml.DmlCases)
+test_1_function_1_funcntion_test_case001 ... ok
+test_1_function_2_funcntion_test_case002 (test_dml.DmlCases)
+test_1_function_2_funcntion_test_case002 ... ok
+test_1_function_3_funcntion_test_case003 (test_dml.DmlCases)
+test_1_function_3_funcntion_test_case003 ... ok
+test_1_function_4_funcntion_test_case004 (test_dml.DmlCases)
+test_1_function_4_funcntion_test_case004 ... ok
+test_1_function_5_funcntion_test_case005 (test_dml.DmlCases)
+test_1_function_5_funcntion_test_case005 ... ok
+test_2_select_01_select_test_case001 (test_dml.DmlCases)
+test_2_select_01_select_test_case001 ... ok
+test_2_select_02_select_test_case002 (test_dml.DmlCases)
+test_2_select_02_select_test_case002 ... ok
+test_2_select_03_select_test_case003 (test_dml.DmlCases)
+test_2_select_03_select_test_case003 ... ok
+test_2_select_04_select_test_case004 (test_dml.DmlCases)
+test_2_select_04_select_test_case004 ... ok
+test_2_select_05_select_test_case005 (test_dml.DmlCases)
+test_2_select_05_select_test_case005 ... ok
+test_2_select_06_select_test_case006 (test_dml.DmlCases)
+test_2_select_06_select_test_case006 ... ok
+test_2_select_07_select_test_case007 (test_dml.DmlCases)
+test_2_select_07_select_test_case007 ... ok
+test_2_select_08_select_test_case008 (test_dml.DmlCases)
+test_2_select_08_select_test_case008 ... ok
+test_2_select_09_select_test_case009 (test_dml.DmlCases)
+test_2_select_09_select_test_case009 ... ok
+test_2_select_10_select_test_case0010 (test_dml.DmlCases)
+test_2_select_10_select_test_case0010 ... ok
+test_2_select_11_select_test_case0011 (test_dml.DmlCases)
+test_2_select_11_select_test_case0011 ... ok
+test_2_select_12_select_test_case0012 (test_dml.DmlCases)
+test_2_select_12_select_test_case0012 ... ok
+test_2_select_13_select_test_case0013 (test_dml.DmlCases)
+test_2_select_13_select_test_case0013 ... ok
+test_2_select_14_select_test_case0014 (test_dml.DmlCases)
+test_2_select_14_select_test_case0014 ... ok
+test_2_select_15_select_test_case0015 (test_dml.DmlCases)
+test_2_select_15_select_test_case0015 ... ok
+test_2_select_16_select_test_case0016 (test_dml.DmlCases)
+test_2_select_16_select_test_case0016 ... ok
+test_2_select_17_select_test_case0017 (test_dml.DmlCases)
+test_2_select_17_select_test_case0017 ... ok
+test_2_select_18_select_test_case0018 (test_dml.DmlCases)
+test_2_select_18_select_test_case0018 ... ok
+test_2_select_19_select_test_case0019 (test_dml.DmlCases)
+test_2_select_19_select_test_case0019 ... ok
+test_2_select_20_select_test_case0020 (test_dml.DmlCases)
+test_2_select_20_select_test_case0020 ... ok
+test_2_select_21_select_test_case0021 (test_dml.DmlCases)
+test_2_select_21_select_test_case0021 ... ok
+test_2_select_22_select_test_case0022 (test_dml.DmlCases)
+test_2_select_22_select_test_case0022 ... ok
+test_2_select_23_select_test_case0023 (test_dml.DmlCases)
+test_2_select_23_select_test_case0023 ... ok
+test_2_select_24_select_test_case0024 (test_dml.DmlCases)
+test_2_select_24_select_test_case0024 ... ok
+test_2_select_25_select_test_case0025 (test_dml.DmlCases)
+test_2_select_25_select_test_case0025 ... ok
+test_2_select_26_select_test_case0026 (test_dml.DmlCases)
+test_2_select_26_select_test_case0026 ... ok
+test_2_select_27_select_test_case0027 (test_dml.DmlCases)
+test_2_select_27_select_test_case0027 ... ok
+test_2_select_28_select_test_case0028 (test_dml.DmlCases)
+test_2_select_28_select_test_case0028 ... ok
+test_2_select_29_select_test_case0029 (test_dml.DmlCases)
+test_2_select_29_select_test_case0029 ... ok
+test_2_select_30_select_test_case0030 (test_dml.DmlCases)
+test_2_select_30_select_test_case0030 ... ok
+test_2_select_31_select_test_case0031 (test_dml.DmlCases)
+test_2_select_31_select_test_case0031 ... ok
+test_2_select_32_select_test_case0032 (test_dml.DmlCases)
+test_2_select_32_select_test_case0032 ... ok
+test_3_expalin_01_select_test_case001 (test_dml.DmlCases)
+test_3_expalin_01_select_test_case001 ... ok
+test_3_expalin_02_select_test_case002 (test_dml.DmlCases)
+test_3_expalin_02_select_test_case002 ... ok
+test_3_expalin_03_select_test_case003 (test_dml.DmlCases)
+test_3_expalin_03_select_test_case003 ... FAIL
+test_3_expalin_04_select_test_case004 (test_dml.DmlCases)
+test_3_expalin_04_select_test_case004 ... FAIL
+test_3_expalin_05_select_test_case005 (test_dml.DmlCases)
+test_3_expalin_05_select_test_case005 ... ok
+test_3_expalin_06_select_test_case006 (test_dml.DmlCases)
+test_3_expalin_06_select_test_case006 ... ok
+test_3_expalin_07_select_test_case007 (test_dml.DmlCases)
+test_3_expalin_07_select_test_case007 ... ok
+test_3_expalin_08_select_test_case008 (test_dml.DmlCases)
+test_3_expalin_08_select_test_case008 ... ok
+test_3_expalin_09_select_test_case009 (test_dml.DmlCases)
+test_3_expalin_09_select_test_case009 ... FAIL
+test_3_expalin_10_select_test_case0010 (test_dml.DmlCases)
+test_3_expalin_10_select_test_case0010 ... ok
+test_3_expalin_11_select_test_case0011 (test_dml.DmlCases)
+test_3_expalin_11_select_test_case0011 ... FAIL
+test_3_expalin_12_select_test_case0012 (test_dml.DmlCases)
+test_3_expalin_12_select_test_case0012 ... ok
+test_3_expalin_13_select_test_case0013 (test_dml.DmlCases)
+test_3_expalin_13_select_test_case0013 ... FAIL
+test_3_expalin_14_select_test_case0014 (test_dml.DmlCases)
+test_3_expalin_14_select_test_case0014 ... FAIL
+test_3_expalin_15_select_test_case0015 (test_dml.DmlCases)
+test_3_expalin_15_select_test_case0015 ... ok
+test_3_expalin_16_select_test_case0016 (test_dml.DmlCases)
+test_3_expalin_16_select_test_case0016 ... ok
+test_3_expalin_17_select_test_case0017 (test_dml.DmlCases)
+test_3_expalin_17_select_test_case0017 ... FAIL
+test_3_expalin_18_select_test_case0018 (test_dml.DmlCases)
+test_3_expalin_18_select_test_case0018 ... FAIL
+test_3_expalin_19_select_test_case0019 (test_dml.DmlCases)
+test_3_expalin_19_select_test_case0019 ... FAIL
+test_3_expalin_20_select_test_case0020 (test_dml.DmlCases)
+test_3_expalin_20_select_test_case0020 ... FAIL
+test_3_expalin_21_select_test_case0021 (test_dml.DmlCases)
+test_3_expalin_21_select_test_case0021 ... ok
+test_3_expalin_22_select_test_case0022 (test_dml.DmlCases)
+test_3_expalin_22_select_test_case0022 ... ok
+test_3_expalin_23_select_test_case0023 (test_dml.DmlCases)
+test_3_expalin_23_select_test_case0023 ... ok
+test_3_expalin_24_select_test_case0024 (test_dml.DmlCases)
+test_3_expalin_24_select_test_case0024 ... ok
+test_3_expalin_25_select_test_case0025 (test_dml.DmlCases)
+test_3_expalin_25_select_test_case0025 ... ok
+test_3_expalin_26_select_test_case0026 (test_dml.DmlCases)
+test_3_expalin_26_select_test_case0026 ... FAIL
+test_3_expalin_27_select_test_case0027 (test_dml.DmlCases)
+test_3_expalin_27_select_test_case0027 ... FAIL
+test_3_expalin_28_select_test_case0028 (test_dml.DmlCases)
+test_3_expalin_28_select_test_case0028 ... ok
+test_3_expalin_29_select_test_case0029 (test_dml.DmlCases)
+test_3_expalin_29_select_test_case0029 ... ok
+test_3_expalin_30_select_test_case0030 (test_dml.DmlCases)
+test_3_expalin_30_select_test_case0030 ... ok
+test_3_expalin_31_select_test_case0031 (test_dml.DmlCases)
+test_3_expalin_31_select_test_case0031 ... FAIL
+test_3_expalin_32_select_test_case0032 (test_dml.DmlCases)
+test_3_expalin_32_select_test_case0032 ... ok
+
+======================================================================
+FAIL: test_3_expalin_03_select_test_case003 (test_dml.DmlCases)
+test_3_expalin_03_select_test_case003
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\venv\lib\site-packages\ddt.py", line 191, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\cases\test_dml.py", line 85, in test_3_expalin
+    self.assertEqual(first=dict_['type'], second=return_dict['type'], msg='查询访问方式-不符合预期')
+AssertionError: 'const' != 'ref'
+- const
++ ref
+ : 查询访问方式-不符合预期
+
+======================================================================
+FAIL: test_3_expalin_04_select_test_case004 (test_dml.DmlCases)
+test_3_expalin_04_select_test_case004
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\venv\lib\site-packages\ddt.py", line 191, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\cases\test_dml.py", line 85, in test_3_expalin
+    self.assertEqual(first=dict_['type'], second=return_dict['type'], msg='查询访问方式-不符合预期')
+AssertionError: 'const' != 'ref'
+- const
++ ref
+ : 查询访问方式-不符合预期
+
+======================================================================
+FAIL: test_3_expalin_09_select_test_case009 (test_dml.DmlCases)
+test_3_expalin_09_select_test_case009
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\venv\lib\site-packages\ddt.py", line 191, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\cases\test_dml.py", line 85, in test_3_expalin
+    self.assertEqual(first=dict_['type'], second=return_dict['type'], msg='查询访问方式-不符合预期')
+AssertionError: 'ref' != 'range'
+- ref
++ range
+ : 查询访问方式-不符合预期
+
+======================================================================
+FAIL: test_3_expalin_11_select_test_case0011 (test_dml.DmlCases)
+test_3_expalin_11_select_test_case0011
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\venv\lib\site-packages\ddt.py", line 191, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\cases\test_dml.py", line 85, in test_3_expalin
+    self.assertEqual(first=dict_['type'], second=return_dict['type'], msg='查询访问方式-不符合预期')
+AssertionError: 'ref_or_null' != 'ref'
+- ref_or_null
++ ref
+ : 查询访问方式-不符合预期
+
+======================================================================
+FAIL: test_3_expalin_13_select_test_case0013 (test_dml.DmlCases)
+test_3_expalin_13_select_test_case0013
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\venv\lib\site-packages\ddt.py", line 191, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\cases\test_dml.py", line 85, in test_3_expalin
+    self.assertEqual(first=dict_['type'], second=return_dict['type'], msg='查询访问方式-不符合预期')
+AssertionError: 'range' != 'const'
+- range
++ const
+ : 查询访问方式-不符合预期
+
+======================================================================
+FAIL: test_3_expalin_14_select_test_case0014 (test_dml.DmlCases)
+test_3_expalin_14_select_test_case0014
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\venv\lib\site-packages\ddt.py", line 191, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\cases\test_dml.py", line 85, in test_3_expalin
+    self.assertEqual(first=dict_['type'], second=return_dict['type'], msg='查询访问方式-不符合预期')
+AssertionError: 'range' != 'ALL'
+- range
++ ALL
+ : 查询访问方式-不符合预期
+
+======================================================================
+FAIL: test_3_expalin_17_select_test_case0017 (test_dml.DmlCases)
+test_3_expalin_17_select_test_case0017
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\venv\lib\site-packages\ddt.py", line 191, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\cases\test_dml.py", line 85, in test_3_expalin
+    self.assertEqual(first=dict_['type'], second=return_dict['type'], msg='查询访问方式-不符合预期')
+AssertionError: 'index' != 'ALL'
+- index
++ ALL
+ : 查询访问方式-不符合预期
+
+======================================================================
+FAIL: test_3_expalin_18_select_test_case0018 (test_dml.DmlCases)
+test_3_expalin_18_select_test_case0018
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\venv\lib\site-packages\ddt.py", line 191, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\cases\test_dml.py", line 85, in test_3_expalin
+    self.assertEqual(first=dict_['type'], second=return_dict['type'], msg='查询访问方式-不符合预期')
+AssertionError: 'index' != 'ALL'
+- index
++ ALL
+ : 查询访问方式-不符合预期
+
+======================================================================
+FAIL: test_3_expalin_19_select_test_case0019 (test_dml.DmlCases)
+test_3_expalin_19_select_test_case0019
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\venv\lib\site-packages\ddt.py", line 191, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\cases\test_dml.py", line 85, in test_3_expalin
+    self.assertEqual(first=dict_['type'], second=return_dict['type'], msg='查询访问方式-不符合预期')
+AssertionError: 'index' != 'ALL'
+- index
++ ALL
+ : 查询访问方式-不符合预期
+
+======================================================================
+FAIL: test_3_expalin_20_select_test_case0020 (test_dml.DmlCases)
+test_3_expalin_20_select_test_case0020
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\venv\lib\site-packages\ddt.py", line 191, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\cases\test_dml.py", line 85, in test_3_expalin
+    self.assertEqual(first=dict_['type'], second=return_dict['type'], msg='查询访问方式-不符合预期')
+AssertionError: 'index' != 'ALL'
+- index
++ ALL
+ : 查询访问方式-不符合预期
+
+======================================================================
+FAIL: test_3_expalin_26_select_test_case0026 (test_dml.DmlCases)
+test_3_expalin_26_select_test_case0026
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\venv\lib\site-packages\ddt.py", line 191, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\cases\test_dml.py", line 85, in test_3_expalin
+    self.assertEqual(first=dict_['type'], second=return_dict['type'], msg='查询访问方式-不符合预期')
+AssertionError: 'index_merge' != 'ref'
+- index_merge
++ ref
+ : 查询访问方式-不符合预期
+
+======================================================================
+FAIL: test_3_expalin_27_select_test_case0027 (test_dml.DmlCases)
+test_3_expalin_27_select_test_case0027
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\venv\lib\site-packages\ddt.py", line 191, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\cases\test_dml.py", line 85, in test_3_expalin
+    self.assertEqual(first=dict_['type'], second=return_dict['type'], msg='查询访问方式-不符合预期')
+AssertionError: 'index_merge' != 'ref'
+- index_merge
++ ref
+ : 查询访问方式-不符合预期
+
+======================================================================
+FAIL: test_3_expalin_31_select_test_case0031 (test_dml.DmlCases)
+test_3_expalin_31_select_test_case0031
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\venv\lib\site-packages\ddt.py", line 191, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\nancygong\PycharmProjects\DmlTestFramework\cases\test_dml.py", line 85, in test_3_expalin
+    self.assertEqual(first=dict_['type'], second=return_dict['type'], msg='查询访问方式-不符合预期')
+AssertionError: 'index_merge' != 'ALL'
+- index_merge
++ ALL
+ : 查询访问方式-不符合预期
+
+----------------------------------------------------------------------
+Ran 69 tests in 3.720s
+
+FAILED (failures=13)
